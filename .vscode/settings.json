@@ -1,4 +1,5 @@
 {
+	"amiga.program": "out/throwing-shapes",
 	"[m68k]": {
 		"editor.rulers": [
 			8,
@@ -7,10 +8,7 @@
 		]
 	},
 	"m68k.includePaths": [
-		"/Users/batesgw1/amiga/ndk",
-		"/Users/batesgw1/amiga/libraries",
 		"/Users/batesgw1/.vscode/extensions/bartmanabyss.amiga-debug-1.7.1/bin/darwin/opt/m68k-amiga-elf/sys-include"
 	],
-	"C_Cpp.default.configurationProvider": "BartmanAbyss.amiga-debug",
 	"m68k.vasm.provideDiagnostics": false
 }

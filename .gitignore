@@ -1,3 +1,4 @@
 out/*
 obj/*
+dist/*
 .DS_Store
