@@ -9,7 +9,7 @@ _start:
 		dc.l	880					; BB_DOSBLOCK - Rootblock location for DOS disks
 		else
 		; Startup code when testing as exe
-		code_c
+		section .text,code,chip
 		include	"PhotonsMiniWrapper1.04!.S"
 		endc
 
