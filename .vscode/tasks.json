@@ -23,8 +23,7 @@
 		    }
 		},
 		"args": [
-		    "-j4",
-		    "program=${config:amiga.program}",
+		    "-j4"
 		],
 		"problemMatcher": [
 		    {
