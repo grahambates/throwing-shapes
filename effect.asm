@@ -32,9 +32,6 @@ COL07 = $fc7
 DIW_W = 256
 DIW_H = 256
 BPLS = 3
-SCROLL = 0							; enable playfield scroll
-INTERLEAVED = 0
-DPF = 0								; enable dual playfield
 
 ; Screen buffer:
 SCREEN_W = DIW_W
@@ -57,9 +54,9 @@ DIW_XSTOP = DIW_XSTRT+DIW_W
 DIW_YSTOP = DIW_YSTRT+DIW_H-1
 DIW_STRT = (DIW_YSTRT<<8)!DIW_XSTRT
 DIW_STOP = ((DIW_YSTOP-256)<<8)!(DIW_XSTOP-256)
-DDF_STRT = ((DIW_XSTRT-17)>>1)&$00fc-SCROLL*8
+DDF_STRT = ((DIW_XSTRT-17)>>1)&$00fc
 DDF_STOP = ((DIW_XSTRT-17+(((DIW_W>>4)-1)<<4))>>1)&$00fc
-BPLCON0V = BPLS<<(12+DPF)!DPF<<10!$200
+BPLCON0V = BPLS<<12!$200
 
 
 ********************************************************************************
