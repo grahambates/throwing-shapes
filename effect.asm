@@ -1,15 +1,15 @@
 		incdir	"./include"
 		include	"hw.i"
 
-		xdef	_start
-_start:
 		ifd	BOOT
 		dc.b	"DOS",0					; BB_ID - Always has to be DOS\0
 		dc.l	$54a6b95c				; BB_CHKSUM - Fix up after assembling
 		dc.l	880					; BB_DOSBLOCK - Rootblock location for DOS disks
 		else
 		; Startup code when testing as exe
-		section .text,code,chip
+		code_c
+		xdef	_start
+_start:
 		include	"PhotonsMiniWrapper1.04!.S"
 		endc
 
